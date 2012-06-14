@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface RPSwipeViewController : UIViewController
+{
+    CGPoint originalCenter;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

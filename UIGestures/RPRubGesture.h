@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIGestureRecognizerSubclass.h>
 
 @interface RPRubGesture : UIGestureRecognizer
+{
+    CGPoint startLocation;
+}
+
+@property (assign) int rubs;
 
 @end

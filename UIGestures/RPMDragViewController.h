@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface RPMDragViewController : UIViewController
+{
+    NSMutableDictionary *dragging;
+}
+
+@property (strong, nonatomic) IBOutletCollection(UIView) NSArray *labels;
 
 @end

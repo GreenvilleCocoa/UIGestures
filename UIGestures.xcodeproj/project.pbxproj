@@ -13,9 +13,22 @@
 		EF5DA0A21589529F00C179CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5DA0A01589529F00C179CF /* InfoPlist.strings */; };
 		EF5DA0A41589529F00C179CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0A31589529F00C179CF /* main.m */; };
 		EF5DA0A81589529F00C179CF /* RPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0A71589529F00C179CF /* RPAppDelegate.m */; };
-		EF5DA0AB1589529F00C179CF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5DA0A91589529F00C179CF /* MainStoryboard_iPhone.storyboard */; };
 		EF5DA0AE1589529F00C179CF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5DA0AC1589529F00C179CF /* MainStoryboard_iPad.storyboard */; };
-		EF5DA0B11589529F00C179CF /* RPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0B01589529F00C179CF /* RPViewController.m */; };
+		EF5DA0B9158965A000C179CF /* RPTapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0B8158965A000C179CF /* RPTapViewController.m */; };
+		EF5DA0BC1589686F00C179CF /* RPDTapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0BB1589686F00C179CF /* RPDTapViewController.m */; };
+		EF5DA0BF1589691C00C179CF /* RPPinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0BE1589691C00C179CF /* RPPinchViewController.m */; };
+		EF5DA0C2158969F700C179CF /* RPRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0C1158969F700C179CF /* RPRotateViewController.m */; };
+		EF5DA0C515896BED00C179CF /* RPDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0C415896BED00C179CF /* RPDragViewController.m */; };
+		EF5DA0C715896CD000C179CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5DA0C615896CD000C179CF /* QuartzCore.framework */; };
+		EF5DA0CA15896E2500C179CF /* RPMDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0C915896E2500C179CF /* RPMDragViewController.m */; };
+		EF5DA0CD158970A200C179CF /* RPHoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0CC158970A100C179CF /* RPHoldViewController.m */; };
+		EF5DA0D0158971A800C179CF /* RPSimultaneousViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0CF158971A800C179CF /* RPSimultaneousViewController.m */; };
+		EF5DA0D3158971B600C179CF /* RPCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0D2158971B600C179CF /* RPCustomViewController.m */; };
+		EF5DA0D61589794400C179CF /* RPRubGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0D51589794300C179CF /* RPRubGesture.m */; };
+		EF5DA0D915897DB400C179CF /* lamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5DA0D715897DB400C179CF /* lamp.jpg */; };
+		EF5DA0DA15897DB400C179CF /* genie.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF5DA0D815897DB400C179CF /* genie.gif */; };
+		EF5DA0DD1589830600C179CF /* RPSwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0DC1589830500C179CF /* RPSwipeViewController.m */; };
+		EF5DA0E01589865900C179CF /* RPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5DA0DF1589865900C179CF /* RPTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +36,40 @@
 		EF5DA0971589529F00C179CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EF5DA0991589529F00C179CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF5DA09B1589529F00C179CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EF5DA09F1589529F00C179CF /* UIGestures-Info.plist */ = {isa = PBXFileReference; path = "UIGestures-Info.plist"; sourceTree = "<group>"; };
+		EF5DA09F1589529F00C179CF /* UIGestures-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIGestures-Info.plist"; sourceTree = "<group>"; };
 		EF5DA0A11589529F00C179CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF5DA0A31589529F00C179CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EF5DA0A51589529F00C179CF /* UIGestures-Prefix.pch */ = {isa = PBXFileReference; path = "UIGestures-Prefix.pch"; sourceTree = "<group>"; };
-		EF5DA0A61589529F00C179CF /* RPAppDelegate.h */ = {isa = PBXFileReference; path = RPAppDelegate.h; sourceTree = "<group>"; };
+		EF5DA0A51589529F00C179CF /* UIGestures-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestures-Prefix.pch"; sourceTree = "<group>"; };
+		EF5DA0A61589529F00C179CF /* RPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPAppDelegate.h; sourceTree = "<group>"; };
 		EF5DA0A71589529F00C179CF /* RPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPAppDelegate.m; sourceTree = "<group>"; };
-		EF5DA0AA1589529F00C179CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		EF5DA0AD1589529F00C179CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		EF5DA0AF1589529F00C179CF /* RPViewController.h */ = {isa = PBXFileReference; path = RPViewController.h; sourceTree = "<group>"; };
-		EF5DA0B01589529F00C179CF /* RPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPViewController.m; sourceTree = "<group>"; };
+		EF5DA0B7158965A000C179CF /* RPTapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPTapViewController.h; sourceTree = "<group>"; };
+		EF5DA0B8158965A000C179CF /* RPTapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPTapViewController.m; sourceTree = "<group>"; };
+		EF5DA0BA1589686F00C179CF /* RPDTapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPDTapViewController.h; sourceTree = "<group>"; };
+		EF5DA0BB1589686F00C179CF /* RPDTapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPDTapViewController.m; sourceTree = "<group>"; };
+		EF5DA0BD1589691C00C179CF /* RPPinchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPPinchViewController.h; sourceTree = "<group>"; };
+		EF5DA0BE1589691C00C179CF /* RPPinchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPPinchViewController.m; sourceTree = "<group>"; };
+		EF5DA0C0158969F700C179CF /* RPRotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRotateViewController.h; sourceTree = "<group>"; };
+		EF5DA0C1158969F700C179CF /* RPRotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRotateViewController.m; sourceTree = "<group>"; };
+		EF5DA0C315896BED00C179CF /* RPDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPDragViewController.h; sourceTree = "<group>"; };
+		EF5DA0C415896BED00C179CF /* RPDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPDragViewController.m; sourceTree = "<group>"; };
+		EF5DA0C615896CD000C179CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EF5DA0C815896E2500C179CF /* RPMDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPMDragViewController.h; sourceTree = "<group>"; };
+		EF5DA0C915896E2500C179CF /* RPMDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPMDragViewController.m; sourceTree = "<group>"; };
+		EF5DA0CB158970A100C179CF /* RPHoldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPHoldViewController.h; sourceTree = "<group>"; };
+		EF5DA0CC158970A100C179CF /* RPHoldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPHoldViewController.m; sourceTree = "<group>"; };
+		EF5DA0CE158971A800C179CF /* RPSimultaneousViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSimultaneousViewController.h; sourceTree = "<group>"; };
+		EF5DA0CF158971A800C179CF /* RPSimultaneousViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSimultaneousViewController.m; sourceTree = "<group>"; };
+		EF5DA0D1158971B600C179CF /* RPCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPCustomViewController.h; sourceTree = "<group>"; };
+		EF5DA0D2158971B600C179CF /* RPCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPCustomViewController.m; sourceTree = "<group>"; };
+		EF5DA0D41589794300C179CF /* RPRubGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPRubGesture.h; sourceTree = "<group>"; };
+		EF5DA0D51589794300C179CF /* RPRubGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPRubGesture.m; sourceTree = "<group>"; };
+		EF5DA0D715897DB400C179CF /* lamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lamp.jpg; sourceTree = "<group>"; };
+		EF5DA0D815897DB400C179CF /* genie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = genie.gif; sourceTree = "<group>"; };
+		EF5DA0DB1589830500C179CF /* RPSwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSwipeViewController.h; sourceTree = "<group>"; };
+		EF5DA0DC1589830500C179CF /* RPSwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSwipeViewController.m; sourceTree = "<group>"; };
+		EF5DA0DE1589865900C179CF /* RPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPTableViewController.h; sourceTree = "<group>"; };
+		EF5DA0DF1589865900C179CF /* RPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5DA0C715896CD000C179CF /* QuartzCore.framework in Frameworks */,
 				EF5DA0981589529F00C179CF /* UIKit.framework in Frameworks */,
 				EF5DA09A1589529F00C179CF /* Foundation.framework in Frameworks */,
 				EF5DA09C1589529F00C179CF /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EF5DA0971589529F00C179CF /* UIKit.framework */,
+				EF5DA0C615896CD000C179CF /* QuartzCore.framework */,
 				EF5DA0991589529F00C179CF /* Foundation.framework */,
 				EF5DA09B1589529F00C179CF /* CoreGraphics.framework */,
 			);
@@ -81,10 +120,33 @@
 			children = (
 				EF5DA0A61589529F00C179CF /* RPAppDelegate.h */,
 				EF5DA0A71589529F00C179CF /* RPAppDelegate.m */,
-				EF5DA0A91589529F00C179CF /* MainStoryboard_iPhone.storyboard */,
 				EF5DA0AC1589529F00C179CF /* MainStoryboard_iPad.storyboard */,
-				EF5DA0AF1589529F00C179CF /* RPViewController.h */,
-				EF5DA0B01589529F00C179CF /* RPViewController.m */,
+				EF5DA0DE1589865900C179CF /* RPTableViewController.h */,
+				EF5DA0DF1589865900C179CF /* RPTableViewController.m */,
+				EF5DA0B7158965A000C179CF /* RPTapViewController.h */,
+				EF5DA0B8158965A000C179CF /* RPTapViewController.m */,
+				EF5DA0BA1589686F00C179CF /* RPDTapViewController.h */,
+				EF5DA0BB1589686F00C179CF /* RPDTapViewController.m */,
+				EF5DA0BD1589691C00C179CF /* RPPinchViewController.h */,
+				EF5DA0BE1589691C00C179CF /* RPPinchViewController.m */,
+				EF5DA0C0158969F700C179CF /* RPRotateViewController.h */,
+				EF5DA0C1158969F700C179CF /* RPRotateViewController.m */,
+				EF5DA0DB1589830500C179CF /* RPSwipeViewController.h */,
+				EF5DA0DC1589830500C179CF /* RPSwipeViewController.m */,
+				EF5DA0C315896BED00C179CF /* RPDragViewController.h */,
+				EF5DA0C415896BED00C179CF /* RPDragViewController.m */,
+				EF5DA0C815896E2500C179CF /* RPMDragViewController.h */,
+				EF5DA0C915896E2500C179CF /* RPMDragViewController.m */,
+				EF5DA0CB158970A100C179CF /* RPHoldViewController.h */,
+				EF5DA0CC158970A100C179CF /* RPHoldViewController.m */,
+				EF5DA0CE158971A800C179CF /* RPSimultaneousViewController.h */,
+				EF5DA0CF158971A800C179CF /* RPSimultaneousViewController.m */,
+				EF5DA0D1158971B600C179CF /* RPCustomViewController.h */,
+				EF5DA0D2158971B600C179CF /* RPCustomViewController.m */,
+				EF5DA0D715897DB400C179CF /* lamp.jpg */,
+				EF5DA0D815897DB400C179CF /* genie.gif */,
+				EF5DA0D41589794300C179CF /* RPRubGesture.h */,
+				EF5DA0D51589794300C179CF /* RPRubGesture.m */,
 				EF5DA09E1589529F00C179CF /* Supporting Files */,
 			);
 			path = UIGestures;
@@ -154,8 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5DA0A21589529F00C179CF /* InfoPlist.strings in Resources */,
-				EF5DA0AB1589529F00C179CF /* MainStoryboard_iPhone.storyboard in Resources */,
 				EF5DA0AE1589529F00C179CF /* MainStoryboard_iPad.storyboard in Resources */,
+				EF5DA0D915897DB400C179CF /* lamp.jpg in Resources */,
+				EF5DA0DA15897DB400C179CF /* genie.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +231,18 @@
 			files = (
 				EF5DA0A41589529F00C179CF /* main.m in Sources */,
 				EF5DA0A81589529F00C179CF /* RPAppDelegate.m in Sources */,
-				EF5DA0B11589529F00C179CF /* RPViewController.m in Sources */,
+				EF5DA0B9158965A000C179CF /* RPTapViewController.m in Sources */,
+				EF5DA0BC1589686F00C179CF /* RPDTapViewController.m in Sources */,
+				EF5DA0BF1589691C00C179CF /* RPPinchViewController.m in Sources */,
+				EF5DA0C2158969F700C179CF /* RPRotateViewController.m in Sources */,
+				EF5DA0C515896BED00C179CF /* RPDragViewController.m in Sources */,
+				EF5DA0CA15896E2500C179CF /* RPMDragViewController.m in Sources */,
+				EF5DA0CD158970A200C179CF /* RPHoldViewController.m in Sources */,
+				EF5DA0D0158971A800C179CF /* RPSimultaneousViewController.m in Sources */,
+				EF5DA0D3158971B600C179CF /* RPCustomViewController.m in Sources */,
+				EF5DA0D61589794400C179CF /* RPRubGesture.m in Sources */,
+				EF5DA0DD1589830600C179CF /* RPSwipeViewController.m in Sources */,
+				EF5DA0E01589865900C179CF /* RPTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,14 +255,6 @@
 				EF5DA0A11589529F00C179CF /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		EF5DA0A91589529F00C179CF /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF5DA0AA1589529F00C179CF /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		EF5DA0AC1589529F00C179CF /* MainStoryboard_iPad.storyboard */ = {
@@ -256,6 +322,7 @@
 				GCC_PREFIX_HEADER = "UIGestures/UIGestures-Prefix.pch";
 				INFOPLIST_FILE = "UIGestures/UIGestures-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -267,6 +334,7 @@
 				GCC_PREFIX_HEADER = "UIGestures/UIGestures-Prefix.pch";
 				INFOPLIST_FILE = "UIGestures/UIGestures-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

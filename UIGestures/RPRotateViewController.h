@@ -10,4 +10,6 @@
 
 @interface RPRotateViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end

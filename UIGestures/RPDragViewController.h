@@ -10,4 +10,6 @@
 
 @interface RPDragViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RPRubGesture.h"
 
-@interface RPCustomViewController : UIViewController
+@interface RPCustomViewController : UIViewController <UIGestureRecognizerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *lamp;
+@property (weak, nonatomic) IBOutlet UIImageView *genie;
 
 @end

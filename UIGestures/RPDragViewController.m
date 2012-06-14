@@ -13,6 +13,7 @@
 @end
 
 @implementation RPDragViewController
+@synthesize label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UIPanGestureRecognizer *drag = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleDrag:)];
+    [label addGestureRecognizer:drag];
 }
 
 - (void)viewDidUnload
@@ -38,6 +42,28 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return YES;
+}
+
+- (void)handleDrag:(UIPanGestureRecognizer *)gesture
+{
+    switch (gesture.state) {
+        case UIGestureRecognizerStateBegan:
+            [label setText:@"Dragging!"];
+                        
+            CGPoint locationInLabel = [gesture locationInView:label];
+            
+            [label.layer setAnchorPoint:CGPointMake(locationInLabel.x/label.frame.size.width, locationInLabel.y/label.frame.size.height)];
+            [label setCenter:[gesture locationInView:self.view]];
+            break;
+            
+        case UIGestureRecognizerStateChanged:
+            [label setCenter:[gesture locationInView:self.view]];
+            break;
+            
+        default:
+            [label setText:@"Drag Me!"];
+            break;
+    }
 }
 
 @end

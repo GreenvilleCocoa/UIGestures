@@ -10,4 +10,6 @@
 
 @interface RPDTapViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end

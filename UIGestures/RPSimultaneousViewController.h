@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RPSimultaneousViewController : UIViewController
+@interface RPSimultaneousViewController : UIViewController <UIGestureRecognizerDelegate>
+{
+    BOOL dragging;
+    BOOL rotating;
+    BOOL scaling;
+    
+    CGPoint originalCenter;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

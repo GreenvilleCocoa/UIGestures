@@ -13,6 +13,7 @@
 @end
 
 @implementation RPCustomViewController
+@synthesize genie, lamp;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    RPRubGesture *rub = [[RPRubGesture alloc] initWithTarget:self action:@selector(handleRub:)];
+    [rub setDelegate:self];
+    [lamp addGestureRecognizer:rub];
+    
+    [genie setAlpha:0.0];
 }
 
 - (void)viewDidUnload
@@ -38,6 +45,21 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return YES;
+}
+
+- (void)handleRub:(RPRubGesture *)gesture
+{
+    switch (gesture.state) {
+        case UIGestureRecognizerStateChanged:
+            [genie setAlpha:gesture.rubs/250.0];
+            break;
+            
+        default:
+            [UIView animateWithDuration:1.0 animations:^{
+                [genie setAlpha:0.0];
+            }];
+            break;
+    }
 }
 
 @end

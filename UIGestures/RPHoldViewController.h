@@ -10,4 +10,6 @@
 
 @interface RPHoldViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end

@@ -13,6 +13,7 @@
 @end
 
 @implementation RPHoldViewController
+@synthesize label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UILongPressGestureRecognizer *hold = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleHold:)];
+    hold.minimumPressDuration = 0.5;
+    hold.numberOfTapsRequired = 0;
+    [label addGestureRecognizer:hold];
 }
 
 - (void)viewDidUnload
@@ -38,6 +44,15 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return YES;
+}
+
+- (void)handleHold:(UILongPressGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        [label setText:@"Thanks!"];
+        
+        [label performSelector:@selector(setText:) withObject:@"Hold Me!" afterDelay:2.0];
+    }
 }
 
 @end

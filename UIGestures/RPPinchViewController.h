@@ -10,4 +10,6 @@
 
 @interface RPPinchViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end

@@ -13,6 +13,7 @@
 @end
 
 @implementation RPRotateViewController
+@synthesize label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    UIRotationGestureRecognizer *rotate = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(handleRotate:)];
+    [label addGestureRecognizer:rotate];
 }
 
 - (void)viewDidUnload
@@ -38,6 +42,28 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return YES;
+}
+
+- (void)handleRotate:(UIRotationGestureRecognizer *)gesture
+{
+    switch (gesture.state) {
+        case UIGestureRecognizerStateBegan:
+            [label setText:@"Weeee!"];
+            break;
+            
+        case UIGestureRecognizerStateChanged:
+            [label setText:@"Getting Sick!"];
+            [label setTransform:CGAffineTransformMakeRotation(gesture.rotation)];
+            break;
+            
+        default:
+            [UIView animateWithDuration:0.5 animations:^{
+                [label setTransform:CGAffineTransformMakeRotation(0.0)];
+            } completion:^(BOOL finished) {
+                [label setText:@"Rotate Me!"];
+            }];
+            break;
+    }
 }
 
 @end
