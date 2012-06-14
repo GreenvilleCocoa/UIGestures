@@ -1,5 +1,5 @@
 //
-//  RPViewController.h
+//  RPSwipeViewController.h
 //  UIGestures
 //
 //  Created by Ryan Poolos on 6/13/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RPViewController : UIViewController
+@interface RPSwipeViewController : UIViewController
 
 @end
