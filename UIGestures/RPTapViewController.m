@@ -32,8 +32,6 @@
 	// Do any additional setup after loading the view.
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    tap.numberOfTapsRequired = 1;
-    tap.numberOfTouchesRequired = 1;
     
     [label addGestureRecognizer:tap];
 }
