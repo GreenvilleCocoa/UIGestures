@@ -318,6 +318,7 @@
 		EF5DA0B51589529F00C179CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIGestures/UIGestures-Prefix.pch";
 				INFOPLIST_FILE = "UIGestures/UIGestures-Info.plist";
@@ -330,6 +331,7 @@
 		EF5DA0B61589529F00C179CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIGestures/UIGestures-Prefix.pch";
 				INFOPLIST_FILE = "UIGestures/UIGestures-Info.plist";
@@ -358,6 +360,7 @@
 				EF5DA0B61589529F00C179CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

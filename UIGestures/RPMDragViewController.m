@@ -61,7 +61,7 @@
         case UIGestureRecognizerStateBegan:
             [label setText:@"Dragging!"];
             
-            [dragging setObject:label forKey:@"Key"];
+            dragging[@"Key"] = label;
             
             CGPoint locationInLabel = [gesture locationInView:label];
             
